@@ -12,7 +12,7 @@ function TwitterFeed() {
 }
 
 export function BuildJourney() {
-  const [updates, setUpdates] = useState([
+  const [updates] = useState([
     {
       date: "2023-12-15",
       title: "JWT Authentication Implemented",

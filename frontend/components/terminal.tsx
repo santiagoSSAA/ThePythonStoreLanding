@@ -30,7 +30,7 @@ def get_orders(request):
       }, 30)
       return () => clearTimeout(timeout)
     }
-  }, [text])
+  }, [text, fullText])
 
   useEffect(() => {
     const interval = setInterval(() => {

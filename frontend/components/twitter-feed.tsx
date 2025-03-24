@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { LucideTwitter } from "lucide-react"
 
 export function TwitterFeed() {
-  const [tweets, setTweets] = useState([
+  const [tweets] = useState([
     {
       id: "1",
       content:
