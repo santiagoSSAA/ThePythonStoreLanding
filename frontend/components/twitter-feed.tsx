@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { LucideTwitter } from "lucide-react"
+import { X } from "lucide-react"
 
 export function TwitterFeed() {
   const [tweets] = useState([
@@ -40,13 +40,13 @@ export function TwitterFeed() {
     <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 h-full">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold flex items-center">
-          <LucideTwitter className="h-5 w-5 text-[#306998] mr-2" />
+          <X className="h-5 w-5 text-white mr-2" />
           <span>@pidge_ssaa</span>
         </h3>
         <Button
           variant="outline"
           size="sm"
-          className="text-[#306998] border-[#306998] hover:bg-[#306998] hover:text-white"
+          className="text-white border-gray-700 hover:bg-black hover:text-white"
           onClick={redirectToTwitter}
         >
           Follow
@@ -68,8 +68,8 @@ export function TwitterFeed() {
         ))}
       </div>
 
-      <Button variant="ghost" className="w-full mt-4 text-[#306998] hover:bg-[#306998]/10" onClick={redirectToTwitter}>
-        View more on Twitter
+      <Button variant="ghost" className="w-full mt-4 text-gray-300 hover:bg-gray-800" onClick={redirectToTwitter}>
+        View more on X
       </Button>
     </div>
   )
